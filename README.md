@@ -66,7 +66,7 @@ final String baseUrl = "http://10.0.2.2:5000";  // For Android emulator
 
 ## 🔗 Related Repository
 
-👉 Backend (Flask + AI)
+👉 https://github.com/AnkitKumarIISERB/law_backend
 
 ---
 
