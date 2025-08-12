@@ -13,6 +13,11 @@ A cross-platform Flutter app that allows users to ask questions related to India
 
 ---
 
+## Demo here!!!!
+
+![App Demo](demo.png)
+
+
 ## 🧰 Tech Stack
 
 - Flutter 3.x (Dart)
