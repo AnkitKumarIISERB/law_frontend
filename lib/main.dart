@@ -108,7 +108,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
     try {
       final response = await http.post(
-        Uri.parse("https://ankitkumariiserb-legal-chatbot.hf.space/ask"),
+        Uri.parse("https://ankitkumariiserb-legal_chatbot_backend.hf.space/ask"),
         headers: {"Content-Type": "application/json"},
         body: jsonEncode({"query": query}),
       );
