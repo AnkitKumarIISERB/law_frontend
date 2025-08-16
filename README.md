@@ -1,15 +1,18 @@
-# ⚖️ Indian Law Q&A App (Frontend)
+# ⚖️ JustiFYI: Indian Law Assistant (Frontend)
 
-A cross-platform Flutter app that allows users to ask questions related to Indian criminal law. The app sends queries to a backend API, which returns AI-generated legal answers based on the **Bharatiya Nyaya Sanhita (BNS)**.
+A cross-platform **Flutter app** that helps users ask questions about Indian criminal law.  
+It connects to a backend API that finds relevant **Bharatiya Nyaya Sanhita (BNS)** sections and explains them in simple language using AI.
 
 ---
 
 ## 📱 Features
 
-- 💬 Ask legal questions in natural language
-- 🔗 Communicates with a Python Flask backend
-- 📄 Displays the relevant legal section and AI-generated answer
-- 🌐 Cross-platform (Android, iOS, Web, Desktop)
+- 🎨 **Modern Dark Theme UI** for a sleek experience  
+- 💬 Ask **legal questions in natural language**  
+- 🔗 Connects to a **Flask + AI embeddings backend**  
+- 📄 Displays **relevant BNS sections + AI-generated explanation**  
+- ⚡ Real-time query sending, responses & loading indicators  
+- 🌐 Runs on **Android · iOS · Web · Desktop**
 
 ---
 
@@ -17,13 +20,18 @@ A cross-platform Flutter app that allows users to ask questions related to India
 
 ![App Demo](demo.png)
 
+🚀 **Try the live app here:** [JustiFYI Frontend (Hugging Face)](https://huggingface.co/spaces/ankitkumariiserb/legal_chatbot_frontend)  
+
+Backend API: [JustiFYI Backend (Hugging Face)](https://huggingface.co/spaces/ankitkumariiserb/legal_chatbot_backend)
+
 
 ## 🧰 Tech Stack
 
-- Flutter 3.x (Dart)
-- `http` for REST API calls
-- `provider` or `setState` for state management (depending on your code)
-- Backend powered by Flask, Hugging Face, and Groq API
+- **Flutter 3.x (Dart)**  
+- `http` for REST API calls  
+- State management via `provider` / `setState`  
+- Backend powered by **Flask · Hugging Face · Sentence Transformers · Groq API**
+
 
 ---
 
@@ -38,34 +46,6 @@ law_frontend/
 ├── pubspec.yaml # Flutter dependencies
 ├── android/ / ios/ / web/ # Platform-specific code
 └── README.md
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repo
-git clone https://github.com/AnkitKumarIISERB/law_frontend.git
-cd law_frontend
-
-### 2. Install dependencies
-flutter pub get
-
-### 3. Run the app
-flutter run
-
-💡 You can also run it in Android Studio, VS Code, or your preferred IDE.
-
----
-
-## 🌐 Connecting to Backend
-
-Make sure the backend Flask API is running (locally or deployed).
-
-Update the API endpoint in your frontend code (typically in services/api.dart or similar):
-final String baseUrl = "http://<your-backend-url>:5000";
-
-If you're testing locally with Android emulator, use:
-final String baseUrl = "http://10.0.2.2:5000";  // For Android emulator
 
 ---
 
